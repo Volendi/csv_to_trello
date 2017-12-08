@@ -4,7 +4,14 @@ from models import Board, Column, Task, Label, LabelColor
 
 
 class CsvParser:
-    def __init__(self, board_title, n_column=0, n_task_title=1, n_task_estimate=2, n_task_description=None, n_label=3, skip_title=True):
+    def __init__(self,
+                 board_title,
+                 n_column=0,
+                 n_task_title=1,
+                 n_task_estimate=2,
+                 n_task_description=None,
+                 n_label=3,
+                 skip_title=True):
         self.__n_column = n_column
         self.__n_task_title = n_task_title
         self.__n_task_description = n_task_description
