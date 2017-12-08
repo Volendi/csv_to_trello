@@ -17,6 +17,12 @@ class Task:
         self.description = None
         self.labels = []
 
+    def title_with_estimate(self):
+        if self.estimate is not None:
+            return "{title} ({estimate})".format(title=self.title, estimate=self.estimate)
+        else:
+            return self.title
+
 
 class Label:
     def __init__(self, title, color):
