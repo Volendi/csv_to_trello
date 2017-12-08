@@ -23,7 +23,10 @@ class TrelloImporter:
             if l.name == label.title and l.color == label.color:
                 return l
 
-        return self.__tr_board.add_label(label.title, label.color)
+        l = self.__tr_board.add_label(label.title, label.color)
+        self.__labels.append(l)
+
+        return l
 
     def __add_label(self, label, tr_task):
         return tr_task.add_label(self.__create_label(label))
