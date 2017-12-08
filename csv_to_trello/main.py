@@ -1,8 +1,11 @@
 import argparse
+from trello_importer import TrelloImporter
+from csv_parser import CsvParser
 
 
 def main(args):
-    print(args)
+    board = CsvParser(args.board).parse(args.file)
+    TrelloImporter().import_board(board)
 
 
 def parse_args():
