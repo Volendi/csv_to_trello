@@ -1,2 +1,4 @@
 virtenv/**
 **/.idea/**
+**/*.pyc
+/csv_to_trello/credentials.py
