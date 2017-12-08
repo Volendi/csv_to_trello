@@ -28,3 +28,16 @@ class Label:
     def __init__(self, title, color):
         self.title = title
         self.color = color
+
+
+class LabelColor:
+    GREEN = 'green'
+    YELLOW = 'yellow'
+    ORANGE = 'orange'
+    RED = 'red'
+    PURPLE = 'purple'
+    BLUE = 'blue'
+    SKY = 'sky'
+    LIME = 'lime'
+    PINK = 'pink'
+    BLACK = 'black'
