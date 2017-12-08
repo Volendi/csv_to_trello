@@ -41,3 +41,4 @@ class LabelColor:
     LIME = 'lime'
     PINK = 'pink'
     BLACK = 'black'
+    TRANSPARENT = None
